@@ -212,5 +212,98 @@
   }
 }
 
+.more {
+  margin-bottom: 350px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 87px;
+
+    span {
+      font-size: 100px;
+      // margin-top: 15px;
+      color: #fff;
+      -webkit-text-stroke: #282A30;
+      -webkit-text-stroke-width: 2px;
+    }
+  }
+  
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: url(../images/about-dots.svg);
+      position: absolute;
+      bottom: 0;
+      bottom: -197px;
+      left: 158px;
+      z-index: -1;
+    }
+  }
+
+  &__block {
+    padding: 60px 98px 60px 117px;
+    box-shadow: 20px 4px 100px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    position: absolute;
+    background-color: #fff;
+
+    &--first {
+      left: -25px;
+      top: 90px;
+    }
+
+    &--second {
+      top: -53px;
+      right: 136px;
+    }    
+
+    &--third {
+      right: 0;
+      bottom: -70px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      content: '1';
+      position: absolute;
+      left: -65px;
+      color: #F7515C;
+      padding: 10px 20px;
+      background-color: rgba(#f7515c, 0.05);
+      border-radius: 50%;
+      top: -40%;
+    }
+
+    &--second::before {
+      content: '2';
+    }
+
+    &--third::before {
+      content: '3';
+    }
+  }
+
+  &__text {
+    font-family: 'Nunito';
+    font-size: 14px;
+    max-width: 240px;
+    opacity: 0.4;
+  }
+}
+
 
 @import 'media';
