@@ -11,8 +11,8 @@
 
 <body>
 
-  <header class="header">
-    <div class="container">
+  <div class="container">
+    <header class="header">
       <a class="logo" href="#">
         <img class="logo__img" src="images/logo.svg" alt="логотип">
       </a>
@@ -41,20 +41,73 @@
       </ul>
 
       <ul class="header__cart">
-        <li class="header__item">
-          <button class="header__btn header__btn--cart">
+        <li class="header__icon">
+          <button class="header__btn header__btn--cart" style="background-image: url(images/cart.svg);">
 
           </button>
         </li>
-        <li class="header__item">
-          <button class="header__btn header__btn--search">
+        <li class=" header__icon">
+          <button class="header__btn header__btn--search" style="background-image: url(images/search.svg);">
 
           </button>
         </li>
       </ul>
 
+    </header>
+  </div>
+
+  <section class="home">
+    <div class="container">
+      <div class="home__inner">
+        <div class="home__content">
+          <h2 class="home__title">
+            <span>decorate home</span>
+            Feel your home
+            with a modern design
+            space
+          </h2>
+
+          <div class="home__wrapper">
+            <button class="home__btn page__btn">Discover</button>
+            <a class="home__video" data-fancybox href="https://www.youtube.com/watch?v=Uy3CvVFx4xc">Watch video</a>
+          </div>
+        </div>
+
+        <img class="home__image" src="images/home-image.jpg" alt="home">
+      </div>
     </div>
-  </header>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__img">
+          <img class="about__image" src="images/about.jpg" alt="about">
+        </div>
+
+        <div class="about__content">
+          <h2 class="about__title title">
+            About
+            <span>Furniture</span>
+          </h2>
+
+          <p class="about__text">
+            People have been using natural objects, such as tree
+            stumps, rocks and moss, as furniture since the
+            beginning of human civilisation.
+          </p>
+
+          <button class="about__btn page__btn">Read more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more">
+    <h2 class="more__title">
+
+    </h2>
+  </section>
 
   <script src="js/main.min.js"></script>
 </body>

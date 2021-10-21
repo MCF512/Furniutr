@@ -4,7 +4,7 @@ const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+// const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -32,6 +32,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))

@@ -1,11 +1,22 @@
 body {
   background-color: #fff;
-  font-family: 'Nunito';
+  font-family: 'Mons';
   font-weight: 400;
+  line-height: 1.4;
+  color: #282A30;
 }
 
 .container {
   max-width: 1245px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.page__btn {
+  color: #fff;
+  background-color: #F7515C;
+  padding: 25px 55px;
+  font-family: 'Mons';
+  font-weight: 600;
+  font-size: 22px;
 }

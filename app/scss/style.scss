@@ -2,10 +2,215 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'libs';
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 77px;
+  margin-bottom: 102px;
 
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    font-family: 'NunitoSans';
+    font-size: 19px;
+  }
 
+  &__item:not(:last-child) {
+    margin-right: 106px;
+  }
 
+  &__link{
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__cart {
+    display: flex;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 85px;
+  }
+
+  &__btn {
+    width: 29px;
+    height: 29px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.home {
+  background-image: url(../images/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 33%;
+  // background-size: 70% 100%;
+
+  &__title {
+    font-weight: 700;
+    font-size: 55px;
+    color: #282A30;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-bottom: 47px;
+    // margin-right: 80px;
+
+    span {
+      font-size: 20px;
+      color: #F7515C;
+      text-transform: uppercase;
+      margin-bottom: 62px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 310px;
+
+    &::before {
+      content: '';
+      width: 35px;
+      height: 265px;
+      background-color: #F7515C;
+      position: absolute;
+      // z-index: -1;
+      top: 16px;
+      left: -100px;
+    }
+
+    &::after {
+      content: url(../images/dots.svg);
+      position: absolute;
+      top: 16px;
+      right: -60px;
+      z-index: -1;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-right: 149px;
+  }
+
+  &__video {
+    font-weight: 600;
+    position: relative;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-image: url(../images/play.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+      left: -82px;
+      top: -19px;
+    }
+  }
+
+  &__image {
+    margin-right: 10px;
+  }
+}
+
+.about {
+  margin-bottom: 295px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    
+    &::before {
+      content: url(../images/about-dots.svg);
+      position: absolute;
+      bottom: -90px;
+      left: 90px;
+    }
+  }
+
+  &__img {
+    margin-right: 120px;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 180px;
+      width: 50px;
+      background-color: #282A30;
+      bottom: 22px;
+      left: -50px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 305px;
+      width: 50px;
+      background-color: #282A30;
+      bottom: 86px;
+      right: -1px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 55px;
+
+    span {
+      font-size: 100px;
+      // margin-top: 15px;
+      color: #fff;
+      -webkit-text-stroke: #282A30;
+      -webkit-text-stroke-width: 2px;
+    }
+  }
+
+  &__text {
+    font-family: 'Nunito';
+    font-size: 22px;
+    opacity: 0.5;
+    line-height: 2;
+    margin-bottom: 48px;
+  }
+}
 
 
 @import 'media';

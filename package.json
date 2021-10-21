@@ -14,10 +14,14 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
     "sass": "^1.41.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@fancyapps/ui": "^4.0.7"
   }
 }
