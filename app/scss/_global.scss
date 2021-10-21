@@ -20,3 +20,16 @@ body {
   font-weight: 600;
   font-size: 22px;
 }
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 1;
+  
+  span {
+    color: #fff;
+    -webkit-text-stroke: #282A30;
+    -webkit-text-stroke-width: 2px;
+  }
+}
