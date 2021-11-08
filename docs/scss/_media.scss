@@ -305,6 +305,10 @@
       margin-right: 10px;
     }
 
+    &__btn {
+      display: none;
+    }
+
     margin-bottom: 40px;
   }
 
@@ -353,6 +357,13 @@
 
   .product {
     margin-bottom: 50px;   
+
+    &__title {
+
+      span {
+        font-size: 50px;
+      }
+    }
   }
 
   .try {
